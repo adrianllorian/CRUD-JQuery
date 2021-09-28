@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="crear(), mostrarDatos(), controlBotones()">
+
+
+
+  
+
+    <table style="margin: 0 auto">
+      <tr>
+        <td colspan="2">
+          <h1 class="text-primary" id="titulo">FORMULARIO DE CLIENTES</h1>
+        </td>
+      </tr>
+      <form name="formulario" id="form" method="GET" action="listaUsuarios.html">
+      <tr>
+
+        <td class="border border-primary">
+          <label for="nombre" class="col-lg-8 control-label">Nombre</label></td>
+        <td class="border border-primary">
+          <input id="nombre" name="nombre" type="text" class="form-control border border-secondary"></td>
+        <td class="border border-primary">
+          <a id="nom"></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-primary"> <label for="apellido" class="col-lg-8 control-label">Apellido</label></td>
+        <td class="border border-primary">
+          <input id="apellido" name="apellido" type="text" class="form-control border border-secondary"></td>
+          <td class="border border-primary">
+          <a id="ape"></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-primary"><label for="correo" class="col-lg-8 control-label">Correo</label></td>
+        <td class="border border-primary">
+          <input id="correo" type="email" name="correo" class="form-control border border-secondary"></td>
+          <td class="border border-primary">
+          <a id="cor"></a>
+        </td>
+      </tr>
+      <tr class="border border-primary">
+        <td><label for="fecha" class="col-lg-8 control-label">Fecha</label></td>
+        <td class="border border-primary">
+          <input id="fecha" type="date" name="fecha" class="form-control border border-secondary"></td>
+           <input id="id" type="text" name="id" style="display: none">
+           <td class="border border-primary">
+          <a id="fec"></a>
+        </td>
+      </tr>
+      
+      </form>
+      <tr>
+        <td class="border border-primary p-2" colspan="2">
+          <button class="btn btn-primary" onclick="agregar()" id="anadir">Añadir Cliente</button>
+          
+          <button class="btn btn-secondary ml-2" onclick="modificar()" type="submit" id="modificar">Modificar Cliente</button></td>
+      </tr>
+    </table>
+   
+  
+  <script src="JavaScript/javaScript.js"></script>
+
+</body>
+
+</html>

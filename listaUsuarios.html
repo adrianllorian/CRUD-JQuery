@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="recibirFormulario()">
+  <header class="container">
+  <h1>Listado de clientes</h1>
+  <button class="btn btn-success mt-4" role="link" onclick="botonCrearCliente()">Crear Cliente</button>
+  </header>
+  
+ <main class="container"> 
+   <table class="mt-4 table" id="tabla">
+   
+    <thead>
+     <tr>
+      <th class="border border-secondary border-left-0 border-right-0 p-2">id</th>
+      <th class="border border-secondary border-left-0 border-right-0 p-2">nombre</th>
+      <th class="border border-secondary border-left-0 border-right-0 p-2">apellidos</th>
+      <th class="border border-secondary border-left-0 border-right-0 p-2">correo</th>
+      <th class="border border-secondary border-left-0 border-right-0 p-2">fecha</th>
+      <th class="border border-secondary border-left-0 border-right-0 p-2">editar</th>
+      <th class="border border-secondary border-left-0 border-right-0 p-2">borrar</th>
+    </tr>
+    </thead>
+    <tbody id="tablita">
+      
+    </tbody>
+    <!--<tr id="fila">
+      <td class="border border-secondary border-left-0 border-right-0  p-2" id="numero">1</td>
+      
+      <td class="border border-secondary border-left-0 border-right-0 p-2" id="nombre">manolo</td>
+      
+      <td class="border border-secondary border-left-0 border-right-0 p-2" id="apellido">escobar</td>
+      
+      <td class="border border-secondary border-left-0 border-right-0 p-2" id="correo">manolo@gmail.com</td>
+      
+      <td class="border border-secondary border-left-0 border-right-0 p-2" id="fecha">2017-08-01 </td>
+      
+      <td class="border border-secondary border-left-0 border-right-0 p-2">
+      <button class="btn btn-primary">Editar</button>
+      </td>
+      <td class="border border-secondary border-left-0 border-right-0 p-2">
+      <button class="btn btn-danger">Eliminar</button>
+      </td>
+    </tr>-->
+  
+  </table>
+  </main>
+  <script src="JavaScript/javaScript.js"></script>
+</body>
+</html>
